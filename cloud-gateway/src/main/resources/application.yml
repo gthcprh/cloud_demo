@@ -1,0 +1,18 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: ts-gateway
+  cloud:
+    nacos:
+      discovery:
+        username: nacos
+        password: nacos
+        server-addr: 172.51.216.105:8848
+        namespace: public
+    gateway:
+      discovery:
+        locator:
+          enabled: true  #开启根据微服务名称自动转发
+          lower-case-service-id: true  #微服务名称以小写形式呈现
+

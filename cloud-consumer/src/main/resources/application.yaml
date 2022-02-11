@@ -1,0 +1,12 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: cloud-consumer
+  cloud:
+    nacos:
+      discovery:
+        namespace: public
+        password: nacos
+        server-addr: 172.51.216.105:8848
+        username: nacos
